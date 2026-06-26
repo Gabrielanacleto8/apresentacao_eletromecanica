@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing page premium para apresentação de uma fonte de alimentação regulada 5V.">
+  <title>Fonte Regulada 5V | Projeto de Eletrônica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="progress" aria-hidden="true"></div>
+  <div class="page-glow page-glow-one" aria-hidden="true"></div>
+  <div class="page-glow page-glow-two" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#hero" aria-label="Ir para o início">
+      <span class="brand-mark">5V</span>
+      <span>
+        <strong>Fonte Regulada</strong>
+        <small>Projeto de Eletrônica</small>
+      </span>
+    </a>
+
+    <nav class="top-nav" aria-label="Navegação principal">
+      <a href="#overview">Visão geral</a>
+      <a href="#process">Funcionamento</a>
+      <a href="#components">Componentes</a>
+      <a href="#results">Resultados</a>
+      <a href="#faq">FAQ</a>
+      <a href="#credits">Créditos</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu">
+      <i data-lucide="menu"></i>
+    </button>
+  </header>
+
+  <main id="deck">
+    <section class="section hero-section active" id="hero" data-nav="Início">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Fonte de alimentação linear estabilizada</span>
+        <h1>Energia estável para protótipos eletrônicos.</h1>
+        <p class="lead">Uma landing page técnica para apresentar a conversão de tensão AC em DC regulada de 5V, com foco em clareza, visual premium e experiência moderna.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#process">
+            <span>Explorar funcionamento</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a class="btn btn-ghost" href="#components">
+            <i data-lucide="cpu"></i>
+            <span>Ver componentes</span>
+          </a>
+        </div>
+
+        <div class="hero-metrics" aria-label="Indicadores principais do projeto">
+          <div>
+            <strong>5V</strong>
+            <span>Saída estabilizada</span>
+          </div>
+          <div>
+            <strong>AC → DC</strong>
+            <span>Conversão completa</span>
+          </div>
+          <div>
+            <strong>7805</strong>
+            <span>Regulação linear</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Demonstração visual do circuito">
+        <div class="device-card">
+          <div class="device-top">
+            <span class="status-dot"></span>
+            <span>Output Monitor</span>
+            <strong>Stable</strong>
+          </div>
+          <div class="voltage-display">
+            <span>DC Output</span>
+            <strong>5.00V</strong>
+          </div>
+          <div class="wave-panel">
+            <div class="wave-line"></div>
+            <div class="wave-line wave-line-soft"></div>
+          </div>
+          <div class="circuit-board">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview" data-nav="Visão">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Objetivo do projeto</span>
+        <h2>Converter, filtrar e regular com precisão.</h2>
+        <p>O projeto demonstra, na prática, as etapas fundamentais para transformar tensão alternada em uma saída contínua estável e adequada para pequenos circuitos.</p>
+      </div>
+
+      <div class="benefit-grid">
+        <article class="feature-card reveal">
+          <i data-lucide="zap"></i>
+          <h3>Transformação</h3>
+          <p>Redução da tensão da rede para um nível seguro e compatível com o estágio eletrônico.</p>
+        </article>
+        <article class="feature-card reveal">
+          <i data-lucide="activity"></i>
+          <h3>Retificação</h3>
+          <p>Conversão de AC para DC pulsante por meio de diodos em retificação de onda completa.</p>
+        </article>
+        <article class="feature-card reveal">
+          <i data-lucide="waves"></i>
+          <h3>Filtragem</h3>
+          <p>Suavização da tensão com capacitor eletrolítico para reduzir ondulações indesejadas.</p>
+        </article>
+        <article class="feature-card reveal">
+          <i data-lucide="shield-check"></i>
+          <h3>Regulação</h3>
+          <p>Saída constante em aproximadamente 5V usando o regulador linear 7805.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section" id="process" data-nav="Processo">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Fluxo técnico</span>
+        <h2>Do sinal alternado à alimentação confiável.</h2>
+        <p>Cada etapa reduz ruído, instabilidade e risco, preparando a fonte para alimentar protótipos e sistemas embarcados.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span>01</span>
+          <div>
+            <h3>Transformador</h3>
+            <p>Reduz a tensão de entrada e isola o circuito para operação mais segura.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <span>02</span>
+          <div>
+            <h3>Diodos retificadores</h3>
+            <p>Conduzem a corrente no sentido correto e criam uma tensão contínua pulsante.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <span>03</span>
+          <div>
+            <h3>Capacitor de filtro</h3>
+            <p>Armazena energia entre os picos do sinal e diminui o ripple da saída.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <span>04</span>
+          <div>
+            <h3>Regulador 7805</h3>
+            <p>Entrega a tensão final estabilizada para cargas eletrônicas de baixa potência.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="components" data-nav="Componentes">
+      <div class="section-heading reveal">
+        <span class="eyebrow">BOM essencial</span>
+        <h2>Componentes organizados por função.</h2>
+        <p>A lista foi redesenhada para facilitar leitura, comparação e apresentação em sala.</p>
+      </div>
+
+      <div class="component-grid">
+        <article class="component-card reveal">
+          <span>1×</span>
+          <h3>Transformador com derivação central</h3>
+          <p>Responsável pela redução da tensão AC.</p>
+        </article>
+        <article class="component-card reveal">
+          <span>2×</span>
+          <h3>Diodos 1N4007</h3>
+          <p>Retificam o sinal alternado.</p>
+        </article>
+        <article class="component-card reveal">
+          <span>1×</span>
+          <h3>Capacitor eletrolítico 2200 µF</h3>
+          <p>Filtra a tensão e reduz ondulações.</p>
+        </article>
+        <article class="component-card reveal">
+          <span>2×</span>
+          <h3>Capacitores cerâmicos 100 nF</h3>
+          <p>Atenuam ruídos de alta frequência.</p>
+        </article>
+        <article class="component-card reveal">
+          <span>1×</span>
+          <h3>Regulador de tensão 7805</h3>
+          <p>Mantém a saída em 5V DC.</p>
+        </article>
+        <article class="component-card reveal">
+          <span>+</span>
+          <h3>Placa, fios e soldagem</h3>
+          <p>Base física para montagem, conexão e testes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section lab-section" id="assembly" data-nav="Montagem">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Montagem e validação</span>
+        <h2>Processo claro, verificável e apresentável.</h2>
+      </div>
+
+      <div class="lab-grid">
+        <div class="checklist reveal">
+          <h3>Checklist de montagem</h3>
+          <ul>
+            <li>Separação e conferência dos componentes</li>
+            <li>Leitura do esquema elétrico</li>
+            <li>Posicionamento na placa ou protoboard</li>
+            <li>Soldagem e inspeção visual</li>
+            <li>Teste de continuidade</li>
+            <li>Medição da tensão de saída</li>
+          </ul>
+        </div>
+
+        <div class="signal-card reveal">
+          <span class="eyebrow">Sinal filtrado</span>
+          <div class="signal-bars" aria-hidden="true">
+            <span style="height: 28%"></span>
+            <span style="height: 48%"></span>
+            <span style="height: 72%"></span>
+            <span style="height: 56%"></span>
+            <span style="height: 34%"></span>
+            <span style="height: 64%"></span>
+            <span style="height: 82%"></span>
+          </div>
+          <p>O capacitor suaviza a saída antes da regulação, melhorando a estabilidade do circuito.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="results" data-nav="Resultados">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Resultado final</span>
+        <h2>Saída estável, leitura simples e aplicação prática.</h2>
+        <p>Após montagem e testes, a fonte se mostra adequada para pequenos projetos eletrônicos e estudos de eletrônica analógica.</p>
+      </div>
+
+      <div class="result-grid">
+        <article class="result-card reveal">
+          <i data-lucide="check-circle-2"></i>
+          <h3>Conversão correta</h3>
+          <p>Tensão AC convertida para DC com retificação funcional.</p>
+        </article>
+        <article class="result-card reveal">
+          <i data-lucide="line-chart"></i>
+          <h3>Ripple reduzido</h3>
+          <p>Filtragem diminui oscilações antes da etapa final.</p>
+        </article>
+        <article class="result-card reveal">
+          <i data-lucide="gauge"></i>
+          <h3>5V estabilizados</h3>
+          <p>Regulador 7805 mantém a saída adequada para protótipos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="applications" data-nav="Aplicações">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Aplicações</span>
+        <h2>Uma base útil para projetos acadêmicos e embarcados.</h2>
+      </div>
+
+      <div class="app-marquee reveal" aria-label="Aplicações do circuito">
+        <span>Arduino</span>
+        <span>ESP32</span>
+        <span>ESP8266</span>
+        <span>Sensores</span>
+        <span>Protótipos</span>
+        <span>Microcontroladores</span>
+        <span>Circuitos digitais</span>
+        <span>Projetos acadêmicos</span>
+      </div>
+    </section>
+
+    <section class="section" id="faq" data-nav="FAQ">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Perguntas frequentes</span>
+        <h2>Dúvidas comuns sobre o circuito.</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item reveal" open>
+          <summary>Por que utilizar o regulador 7805?</summary>
+          <p>Porque ele fornece uma saída fixa de 5V, simples de implementar e adequada para cargas de baixa potência.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Qual a função do capacitor eletrolítico?</summary>
+          <p>Ele armazena energia e reduz as variações da tensão após a retificação, deixando o sinal mais suave.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Onde esse circuito pode ser usado?</summary>
+          <p>Em protótipos, sensores, microcontroladores e pequenos circuitos digitais que exigem alimentação de 5V.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section credits-section" id="credits" data-nav="Créditos">
+      <div class="credits-card reveal">
+        <span class="eyebrow">Créditos do projeto</span>
+        <h2>Projeto desenvolvido para a matéria de Eletromecânica.</h2>
+
+        <div class="credits-grid">
+          <div class="credit-item">
+            <span>Matéria</span>
+            <strong>Eletromecânica</strong>
+          </div>
+          <div class="credit-item">
+            <span>Aluno</span>
+            <strong>Nome do aluno</strong>
+          </div>
+          <div class="credit-item">
+            <span>Projeto</span>
+            <strong>Fonte Regulada 5V</strong>
+          </div>
+        </div>
+
+        <p>Esta apresentação reúne o objetivo, funcionamento, montagem e resultado do circuito de fonte de alimentação regulada.</p>
+      </div>
+    </section>
+  </main>
+
+  <nav id="nav" aria-label="Controle de seções">
+    <button class="nav-btn" id="btnPrev" type="button" disabled>
+      <i data-lucide="arrow-left"></i>
+      <span>Anterior</span>
+    </button>
+    <div class="nav-center">
+      <div class="dots" id="dots" aria-label="Indicadores de seção"></div>
+      <span id="counter">01 / 09</span>
+    </div>
+    <button class="nav-btn" id="btnNext" type="button">
+      <span>Próximo</span>
+      <i data-lucide="arrow-right"></i>
+    </button>
+  </nav>
+
+  <footer class="site-footer">
+    <p>Fonte Regulada 5V — apresentação técnica com interface premium.</p>
+    <a href="#hero">Voltar ao topo</a>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
